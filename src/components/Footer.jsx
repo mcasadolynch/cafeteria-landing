@@ -7,6 +7,12 @@ export default function Footer() {
         <p className="footer-brand">{cafe.name}</p>
         <p>{cafe.address} · {cafe.city}</p>
         <p className="footer-note">© {new Date().getFullYear()} {cafe.name}. Proyecto de práctica, cafetería ficticia.</p>
+        <p className="footer-note">
+          Foto de portada:{' '}
+          <a href="https://unsplash.com/@supa_95" target="_blank" rel="noopener noreferrer">Sebastian Schuppik</a>
+          {' '}en{' '}
+          <a href="https://unsplash.com/photos/tables-and-chairs-inside-building-H7xTpvBjJS4" target="_blank" rel="noopener noreferrer">Unsplash</a>
+        </p>
       </div>
     </footer>
   )
