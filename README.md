@@ -2,6 +2,10 @@
 
 Landing page de una cafetería de barrio (ficticia), hecha como encargo de práctica en Kodarvia.
 
+**Web publicada:** https://cafeteria-landing-smoky.vercel.app
+
+**Identidad:** paleta verde salvia, verde bosque, terracota, crema y madera clara; titulares en Newsreader y texto en Instrument Sans; logo propio (hoja de olmo en sello circular).
+
 - **Stack:** React 18 + Vite 5
 - **Formulario de contacto:** guarda los mensajes en Supabase (tabla `contact_messages`)
 - **Despliegue:** Vercel, con una URL de previsualización por cada push
