@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="eyebrow">{cafe.tagline}</p>
           <h1>
-            Tu café de cada mañana, <span className="hl">a dos pasos de casa</span>.
+            Tu café de cada mañana, <em>a dos pasos de casa</em>.
           </h1>
           <p className="lead">
             Café recién tostado, tostadas de pan de masa madre y bollería que sale del horno a las siete.
