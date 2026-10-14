@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { cafe } from '../data.js'
+import Logo from './Logo.jsx'
 
 const links = [
   { href: '#carta', label: 'Carta' },
@@ -14,9 +14,8 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="wrap header-inner">
-        <a href="#" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">O</span>
-          {cafe.name}
+        <a href="#" className="brand" aria-label="Del Olmo, ir al inicio" onClick={() => setOpen(false)}>
+          <Logo size={40} />
         </a>
 
         <button

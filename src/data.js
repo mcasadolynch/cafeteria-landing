@@ -1,12 +1,12 @@
 // Contenido de la landing. Es un encargo de práctica: la cafetería es ficticia.
 
 export const cafe = {
-  name: 'Café Olmo',
+  name: 'Del Olmo',
   tagline: 'El café de la plaza, desde 1998',
   address: 'Plaza del Olmo, 4',
   city: '28004 Madrid',
   phone: '910 000 000',
-  email: 'hola@cafeolmo.es',
+  email: 'hola@cafedelolmo.es',
 }
 
 export const menu = [

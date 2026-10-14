@@ -12,7 +12,7 @@ export default function About() {
           <p className="eyebrow">Nosotros</p>
           <h2>Una cafetería de las de antes, con el café de ahora</h2>
           <p>
-            Café Olmo nació bajo el árbol que da nombre a la plaza. Somos Lucía y Andrés, y llevamos más de
+            Del Olmo nació bajo el árbol que da nombre a la plaza, y de ahí también nuestra hoja. Somos Lucía y Andrés, y llevamos más de
             veinte años sirviendo cafés a los mismos vecinos y a los que van llegando.
           </p>
           <p>

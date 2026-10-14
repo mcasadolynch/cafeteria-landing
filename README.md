@@ -1,4 +1,4 @@
-# Café Olmo · Landing
+# Del Olmo · Landing
 
 Landing page de una cafetería de barrio (ficticia), hecha como encargo de práctica en Kodarvia.
 

@@ -39,7 +39,7 @@ export default function Contact() {
 
     if (!isSupabaseConfigured) {
       setStatus('error')
-      setServerError('El formulario aún no está conectado. Escríbenos a hola@cafeolmo.es.')
+      setServerError('El formulario aún no está conectado. Escríbenos a hola@cafedelolmo.es.')
       return
     }
 

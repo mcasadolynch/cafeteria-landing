@@ -1,4 +1,4 @@
-/* Café Olmo — paleta: verde salvia, verde bosque, terracota, crema y madera clara.
+/* Del Olmo — paleta: verde salvia, verde bosque, terracota, crema y madera clara.
    Sensación: cercana · artesanal · cálida · actual · tranquila. */
 :root {
   --cream: #f6f1e7;
@@ -202,24 +202,40 @@ a {
 
 .brand {
   display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.25rem;
   text-decoration: none;
   color: var(--forest);
+  padding-block: 8px;
 }
 
-.brand-mark {
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo svg {
+  flex: none;
+}
+
+.logo-text {
   display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--sage);
-  color: var(--cream);
-  font-size: 1.05rem;
+  line-height: 1;
+  gap: 4px;
+}
+
+.logo-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.logo-sub {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracotta);
 }
 
 .menu-toggle {
@@ -750,6 +766,10 @@ a {
 }
 
 .footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.2rem;
