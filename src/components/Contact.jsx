@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import { supabase, isSupabaseConfigured } from '../lib/supabase.js'
+
+const isSupabaseConfigured = Boolean(
+  import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY,
+)
 
 const empty = { name: '', email: '', message: '', website: '' }
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -45,11 +48,17 @@ export default function Contact() {
 
     setStatus('sending')
     setServerError('')
-    const { error } = await supabase.from('contact_messages').insert({
-      name: values.name.trim(),
-      email: values.email.trim(),
-      message: values.message.trim(),
-    })
+    let error = null
+    try {
+      const { supabase } = await import('../lib/supabase.js')
+      ;({ error } = await supabase.from('contact_messages').insert({
+        name: values.name.trim(),
+        email: values.email.trim(),
+        message: values.message.trim(),
+      }))
+    } catch (e) {
+      error = e
+    }
 
     if (error) {
       setStatus('error')

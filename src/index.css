@@ -10,8 +10,8 @@
   --forest-2: #4d5b48;
   --sage: #8fa68b;
   --sage-soft: #c9d4c3;
-  --terracotta: #a8553a;
-  --terracotta-hover: #934a32;
+  --terracotta: #94492f;
+  --terracotta-hover: #7f3d27;
   --terracotta-light: #e3a07f;
   --peach: #efcdb5;
   --line: #ddd3c2;
@@ -530,7 +530,7 @@ a {
   font-size: clamp(1.7rem, 6.5vw, 2.4rem);
   font-weight: 500;
   line-height: 1;
-  color: var(--sage);
+  color: var(--forest);
   font-variant-numeric: tabular-nums;
 }
 
@@ -633,7 +633,7 @@ a {
 }
 
 .section-dark .eyebrow {
-  color: var(--terracotta-light);
+  color: var(--peach);
 }
 
 .contact {
